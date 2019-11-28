@@ -3,11 +3,16 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main extends JFrame implements ActionListener {
+public class Main extends JFrame  implements ActionListener {
     private JLabel lblNom, lblApe, lblId, lblNom2, lblApe2, lblId2;
     private JTextField txtNom, txtApe, txtId, txtNom2, txtApe2, txtId2;
+    //public JTextArea txtres;
+    private JTextArea txtres;
+
+
     private JButton btnMostrar, btnMostrar2, btnInO, btnPosO, btnPreO;
     private ArbolBinarioBusqueda arbolito = new ArbolBinarioBusqueda();
+
 
     public Main() {
         setTitle("Ventana Principal");
@@ -30,6 +35,7 @@ public class Main extends JFrame implements ActionListener {
         txtNom2 = new JTextField(30);
         txtApe2 = new JTextField(30);
         txtId2 = new JTextField(30);
+        txtres = new JTextArea(200,100);
 
         btnMostrar = new JButton("Agregar");
         btnMostrar.addActionListener(this);
@@ -68,7 +74,7 @@ public class Main extends JFrame implements ActionListener {
         btnPosO.setBounds(270, 200, 100, 20);
         btnPreO.setBounds(390, 200, 100, 20);
 
-
+        txtres.setBounds(20, 250, 600, 250);
 
 
         pnlCont.add(lblNom);
@@ -77,6 +83,7 @@ public class Main extends JFrame implements ActionListener {
        /* pnlCont.add(lblNom2);
         pnlCont.add(lblApe2);*/
         pnlCont.add(lblId2);
+        pnlCont.add(txtres);
 
         pnlCont.add(txtNom);
         pnlCont.add(txtApe);

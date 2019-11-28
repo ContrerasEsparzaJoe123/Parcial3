@@ -1,5 +1,9 @@
-public class ArbolBinarioBusqueda {
+import javax.swing.*;
+
+public class ArbolBinarioBusqueda extends JFrame {
     private NodoEmpleado raiz;
+
+
 
     public ArbolBinarioBusqueda(){
         this.raiz = null;
