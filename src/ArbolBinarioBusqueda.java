@@ -3,6 +3,8 @@ import javax.swing.*;
 public class ArbolBinarioBusqueda extends JFrame {
     private NodoEmpleado raiz;
 
+    private Main main;
+
 
 
     public ArbolBinarioBusqueda(){
@@ -36,29 +38,51 @@ public class ArbolBinarioBusqueda extends JFrame {
         return respuesta;
     }
 
-    public void preOrden(){
-        if (!this.isEmpty()){
+    public String preOrden(){
+        String rr = "";
+        String data = "";
+        if(!this.isEmpty()) {
+            data = "> \n"+this.raiz.toString()+data+this.raiz.getIzq().preOrden()+this.raiz.getDer().preOrden();
+            rr = rr + data;
+        }return rr;
+     /*   StringBuilder res1 = new StringBuilder();
 
+      if (!this.isEmpty()){
+            res1.append(this.raiz.getEmpleado()+"->");
             System.out.println(this.raiz.getEmpleado()+"->");
             this.raiz.getIzq().preOrden();
             this.raiz.getDer().preOrden();
         }
+        return res1;*/
     }
-    public void posOrden(){
-        if (!this.isEmpty()){
+    public String posOrden(){
+        String rr = "";
+        String data = "";
+        if(!this.isEmpty()) {
+            data = this.raiz.getIzq().posOrden()+this.raiz.getDer().posOrden()+"> \n"+this.raiz.toString()+data;
+            rr = rr + data;
+        }return rr;
+       /* if (!this.isEmpty()){
             this.raiz.getIzq().posOrden();
             this.raiz.getDer().posOrden();
             System.out.println(this.raiz.getEmpleado()+"->");
-        }
+        }*/
     }
-    public void inOrden(){
-        if (!this.isEmpty()){
+    public String inOrden(){
+        String rr = "";
+        String data = "";
+        if(!this.isEmpty()) {
+
+            data = this.raiz.getIzq().inOrden()+"> \n"+this.raiz.toString()+data+this.raiz.getDer().inOrden();
+            rr = rr + data;
+        }return rr;
+        /*if (!this.isEmpty()){
             this.raiz.getIzq().inOrden();
             System.out.println(this.raiz.getEmpleado()+"->");
             this.raiz.getDer().inOrden();
-
+*/
         }
-    }
+
     public boolean existe(int num){
         boolean respuesta = false;
 

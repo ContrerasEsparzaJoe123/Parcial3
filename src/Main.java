@@ -6,8 +6,9 @@ import java.awt.event.ActionListener;
 public class Main extends JFrame  implements ActionListener {
     private JLabel lblNom, lblApe, lblId, lblNom2, lblApe2, lblId2;
     private JTextField txtNom, txtApe, txtId, txtNom2, txtApe2, txtId2;
-    //public JTextArea txtres;
+
     private JTextArea txtres;
+private String rr;
 
 
     private JButton btnMostrar, btnMostrar2, btnInO, btnPosO, btnPreO;
@@ -35,7 +36,7 @@ public class Main extends JFrame  implements ActionListener {
         txtNom2 = new JTextField(30);
         txtApe2 = new JTextField(30);
         txtId2 = new JTextField(30);
-        txtres = new JTextArea(200,100);
+        txtres = new JTextArea(800,600);
 
         btnMostrar = new JButton("Agregar");
         btnMostrar.addActionListener(this);
@@ -120,18 +121,18 @@ public class Main extends JFrame  implements ActionListener {
         }
         if(e.getSource()==btnMostrar2) {
 
-            Integer id=(Integer.parseInt(txtId.getText()));
+            Integer id=(Integer.parseInt(txtId2.getText()));
 
-            System.out.println(arbolito.existe(id));
+            txtres.setText(String.valueOf(arbolito.existe(id)));
         }
         if(e.getSource()==btnInO) {
-            arbolito.inOrden();
+            txtres.setText(arbolito.inOrden());
         }
         if(e.getSource()==btnPosO) {
-            arbolito.posOrden();
+            txtres.setText(arbolito.posOrden());
         }
         if(e.getSource()==btnPreO) {
-            arbolito.preOrden();
+            txtres.setText(arbolito.preOrden());
         }
 
     }

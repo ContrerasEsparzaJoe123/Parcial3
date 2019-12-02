@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d196c854-58e5-4e42-8032-6a2daf61f3c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parcial3/ArbolBinarioBusqueda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parcial3/ArbolBinarioBusqueda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Parcial3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parcial3/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ArbolBinarioBusqueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbolBinarioBusqueda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -81,10 +82,28 @@
       <workItem from="1574784470095" duration="2853000" />
       <workItem from="1574792353528" duration="2151000" />
       <workItem from="1574803810239" duration="502000" />
+      <workItem from="1574947431696" duration="351000" />
+      <workItem from="1574965866145" duration="1239000" />
+      <workItem from="1574968404507" duration="21000" />
+      <workItem from="1575292590584" duration="841000" />
+      <workItem from="1575295698628" duration="2624000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
